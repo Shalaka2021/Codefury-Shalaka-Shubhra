@@ -32,6 +32,12 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class abccon
  */
+
+
+/**
+ * @author shalaka
+ *
+ */
 @WebServlet("/MeetBookController")
 public class MeetBookController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -135,7 +141,7 @@ public class MeetBookController extends HttpServlet {
 		
 		res.setContentType("text/html");
 		PrintWriter out=res.getWriter();
-		out.println("<html><body>hello!!!!!!!!! ooooo world!!!!!!!<br>"+cal1+"<br>"+cal2+"<br>"+title+"<br>"+" <br>"+x+"<br>"+y+" <br>"+duration+" <br>"+meettype+" <br>"+"<br>"+ "MeetBookController</body></html>");
+		out.println("<html><body>hellooo!!!!!!!!! ooooo worlddddddddd!!!!!!!<br>"+cal1+"<br>"+cal2+"<br>"+title+"<br>"+" <br>"+x+"<br>"+y+" <br>"+duration+" <br>"+meettype+" <br>"+"<br>"+ "MeetBookController</body></html>");
 //		out.println("aklshhjnojihb");
 //		
 		
@@ -168,7 +174,11 @@ public class MeetBookController extends HttpServlet {
 		
 		//5th method
 		boolean flag1;
+		MeetingRoom meetingRoom = new MeetingRoom();
+		flag1=ms.setBookedMeetingRoom(meetingRoom);
 		
+		int flag3;
+		flag3=ms.bookMeeting();
 		
 		
 			

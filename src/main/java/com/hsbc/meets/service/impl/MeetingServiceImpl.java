@@ -36,4 +36,18 @@ public class MeetingServiceImpl implements MeetingService {
 		return null;
 	}
 
+
+	@Override
+	public boolean setBookedMeetingRoom(MeetingRoom meetingRoom) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+	@Override
+	public int bookMeeting() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

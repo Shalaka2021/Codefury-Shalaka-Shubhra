@@ -10,7 +10,7 @@
 <center>
 	<h1>Welcome manager</h1>
 	<h3>Enter meeting details</h3>
-	<form action="MeetBookController" method="post">
+	<form action="ManagerServletController" method="post">
 	HI!!
 		<table>
 		<tr>

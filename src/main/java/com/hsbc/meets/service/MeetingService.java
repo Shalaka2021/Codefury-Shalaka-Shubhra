@@ -17,5 +17,9 @@ public interface MeetingService {
 
 	List<MeetingRoom> getAllAvailableMeetingRooms();
 
+	boolean setBookedMeetingRoom(MeetingRoom meetingRoom);
+
+	int bookMeeting();
+
 
 }
